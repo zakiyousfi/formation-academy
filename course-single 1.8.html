@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-4 text-center text-lg-left">
+          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
+          <ul class="list-inline d-inline">
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 text-center text-lg-right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+   <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand" href="index.html"><img src="images/success alliance  lOGO REV02.0.png" alt="logo"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+             <li class="nav-item @@home">
+              <a class="nav-link" href="index.html">Acceuil</a>
+            </li>
+           <li class="nav-item @@about">
+              <a class="nav-link" href="about.html">A Propos</a>
+            </li>
+            <li class="nav-item @@courses">
+              <a class="nav-link" href="courses.html">Formation</a>
+            </li>
+            
+            
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Formateur.html">Formateur</a>
+                
+                
+                
+              </div>
+            </li>
+            <li class="nav-item @@contact">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="courses.html">Nos Courses</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">formation chef de projet</li>
+        </ul>
+        <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <!-- course thumb -->
+        <img src="images\formation chef de projet confirmé rev01.jpg" class="img-fluid w-100">
+      </div>
+    </div>
+    <!-- course info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
+        <h2>formation chef de projet confirmé </h2>
+      </div>
+      <div class="col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
+        <ul class="list-inline text-xl-center">
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-book text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">Formation</h6>
+                <p class="mb-0">06 Month</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-alarm-clock text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">DURATION</h6>
+                <p class="mb-0">03 Hours</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
+            <div class="d-flex align-items-center">
+              <i class="ti-wallet text-primary icon-md mr-2"></i>
+              <div class="text-left">
+                <h6 class="mb-0">FEE</h6>
+                <p class="mb-0">From: $699</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xl-3 text-sm-right text-left order-sm-2 order-3 order-xl-3 col-sm-6 mb-4 mb-xl-0">
+        <a href="#" class="btn btn-primary">Apply now</a>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- course details -->
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h3>A propos la formation</h3>
+        <p>La formation "Chef de Projet" est conçue pour développer les compétences essentielles en gestion de projets, des bases aux techniques avancées.
+
+          Les participants apprendront à planifier, organiser, suivre et mener à bien des projets avec succès, en tenant compte des contraintes de temps, de budget et de ressources.
+          
+          Les méthodes pédagogiques interactives, les études de cas réelles et les exercices pratiques garantissent une compréhension approfondie et une application concrète des connaissances acquises.
+          
+          Cette formation est idéale pour les professionnels souhaitant évoluer vers des postes de responsabilité en gestion de projets dans divers secteurs d'activité.
+          
+          Au terme de la formation, les participants seront équipés des compétences nécessaires pour être des chefs de projet efficaces et accomplis.</p>
+      </div>
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">Requirements</h3>
+        <div class="col-12 px-0">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-styled">
+                <li>Expérience professionnelle confirmée : Les candidats doivent avoir une expérience solide en gestion de projets, avec des réalisations concrètes en tant que chef de projet ou gestionnaire de projet. Un minimum de [nombre d'années] d'expérience est requis.</li>
+                <li>Connaissances en gestion de projets : Les participants doivent posséder une compréhension approfondie des principaux concepts, outils et méthodologies de gestion de projets. Une maîtrise des étapes de planification, d'exécution, de suivi et de clôture des projets est essentielle.</li>
+                <li>Compétences en leadership : Les candidats doivent avoir démontré des compétences en leadership, la capacité de motiver et d'inspirer les membres de l'équipe, et de prendre des décisions éclairées dans des environnements complexes.</li>
+                <li>Diplôme ou formation équivalente : Il est recommandé que les participants aient un diplôme universitaire ou une formation équivalente dans un domaine lié à la gestion de projets ou au leadership.</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-styled">
+                <li>Aptitudes en communication : Une excellente communication verbale et écrite est essentielle pour interagir efficacement avec les parties prenantes internes et externes du projet.</li>
+                <li>Capacité d'adaptation : Les participants doivent faire preuve de souplesse et de réactivité face aux changements et aux défis qui peuvent survenir au cours de la gestion de projets complexes.</li>
+                <li>Engagement envers l'apprentissage : La formation Chef de Projet Confirmé et Leadership exige un engagement actif des participants, avec une volonté de se perfectionner et de mettre en pratique les nouvelles compétences acquises.</li>
+                <li>Maîtrise de l'outil informatique : Une connaissance de base des outils informatiques de gestion de projets tels que Microsoft Project est recommandée.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mb-4">
+        <h3 class="mb-3">Comment postuler</h3>
+        <ul class="list-styled">
+          <li>Remplir le formulaire de candidature : Rendez-vous sur notre site web officiel et accédez à la page dédiée à la formation. Remplissez soigneusement le formulaire de candidature en fournissant toutes les informations requises.</li>
+          <li>Joindre votre CV : Veuillez joindre votre CV à jour, mettant en évidence votre expérience en gestion de projets et en leadership.</li>
+          <li>Lettre de motivation : Rédigez une lettre de motivation expliquant pourquoi vous souhaitez participer à cette formation, quels sont vos objectifs et ce que vous espérez en retirer.</li>
+          <li>Vérification des prérequis : Assurez-vous que vous répondez aux prérequis de la formation en matière d'expérience professionnelle et de compétences en gestion de projets et leadership.</li>
+          <li>Confirmation et paiement : Une fois que nous aurons reçu votre candidature, nous vous enverrons une confirmation d'inscription. Suivez les instructions pour effectuer le paiement des frais de formation.</li>
+        </ul>
+      </div>
+      <div class="col-12 mb-5">
+        <h3>Les frais de la formation </h3>
+        <p>Les frais de la formation "Chef de Projet Confirmé et Leadership" de Success Alliance sont compétitifs et incluent l'accès à l'ensemble du programme, aux ressources pédagogiques et aux supports de cours.
+
+          Veuillez noter que les frais de formation peuvent varier en fonction de la durée du programme et des modules inclus. Pour obtenir des informations spécifiques sur les frais de la formation en cours, veuillez nous contacter directement via notre formulaire de contact ou par téléphone.
+          
+          Financement :
+          
+          Success Alliance reconnaît l'importance d'accéder à des opportunités de formation de qualité. C'est pourquoi nous offrons des options de financement flexibles pour soutenir les candidats intéressés à suivre notre formation "Chef de Projet Confirmé et Leadership".
+          
+          Nos options de financement peuvent inclure :
+          
+          Paiement échelonné : Vous avez la possibilité de payer les frais de formation en plusieurs versements, facilitant ainsi la gestion de votre budget.
+          
+          Aide au financement : Selon votre situation et vos besoins, nous pouvons vous fournir des conseils sur les possibilités de financement disponibles, y compris les aides gouvernementales ou les dispositifs de formation professionnelle.
+          
+          Prise en charge par l'employeur : Si vous suivez cette formation dans le cadre de votre développement professionnel au sein de votre entreprise, il est possible que votre employeur prenne en charge tout ou partie des frais.
+          
+          Pour discuter des options de financement disponibles pour la formation "Chef de Projet Confirmé et Leadership", n'hésitez pas à nous contacter. Notre équipe se fera un plaisir de vous fournir toutes les informations nécessaires et de vous aider à trouver la meilleure solution pour soutenir votre parcours de formation professionnel.</p>
+      </div>
+      <!-- Formateur -->
+      <div class="col-12">
+        <h5 class="mb-3">Formateur</h5>
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          <div class="media mb-2 mb-sm-0">
+            <img class="mr-4 img-fluid" src="images\FORMATEURS\Formateur-1.jpg" alt="Formateur">
+            <div class="media-body">
+              <h4 class="mt-0">Sam Somrat</h4>
+              Photographer
+            </div>
+          </div>
+          <div class="social-link">
+            <h6 class="d-none d-sm-block">Social Link</h6>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-facebook"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-twitter-alt"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-linkedin"></i></a></li>
+              <li class="list-inline-item"><a class="d-inline-block text-light p-1" href="#"><i class="ti-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-bottom border-primary mt-4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /section -->
+
+<!-- related course -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Des Cours Relative</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images\FORMATION MS PROJECT.png" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+            </ul>
+            <a href="course-single.html">
+              <h4 class="card-title">Photography</h4>
+            </a>
+            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna.</p>
+            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images\FORMATION PMP V7 rev02.png" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+            </ul>
+            <a href="course-single.html">
+              <h4 class="card-title">Programming</h4>
+            </a>
+            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna.</p>
+            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+      <!-- course item -->
+      <div class="col-lg-4 col-sm-6 mb-5">
+        <div class="card p-0 border-primary rounded-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="images\formation Power BI.png" alt="course thumb">
+          <div class="card-body">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
+              <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
+            </ul>
+            <a href="course-single.html">
+              <h4 class="card-title">Lifestyle Archives</h4>
+            </a>
+            <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna.</p>
+            <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /related course -->
+
+<!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
+          <h3 class="text-white">Subscribe Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+                    <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/success alliance  lOGO REV02.0.png" alt="logo"></a>
+
+        </div>
+      <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">Contact </h4><ul class="list-unstyled">
+            <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">+1 (2) 345 6789</li>
+            <li class="mb-2">contact@yourdomain.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0"></div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LIENS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Formation</a></li>
+            <li class="mb-3"><a class="text-color" href="Formateur.html">Nos  Formateur</a></li>
+            <li class="mb-3"><a class="text-color" href="about.html">A propos</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © success Aliance . All Rights Reserved.
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/people/Success-Alliance/100091732077592/"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-dribbble text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
